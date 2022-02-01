@@ -1,0 +1,14 @@
+.bar {
+  display: flex;
+  background-color: var(--color-grey-light-1);
+  margin: 2rem auto;
+  border-bottom: var(--line);
+}
+
+.logo {
+  height: 5rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: auto;
+}

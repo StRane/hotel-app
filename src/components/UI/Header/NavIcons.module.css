@@ -1,0 +1,12 @@
+.features {
+  display: flex;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: var(--color-grey-light-1);
+  margin: 0 2rem;
+}
