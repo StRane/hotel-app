@@ -1,10 +1,8 @@
 import { NavLink } from "react-router-dom";
 
-import Icon from "../../utilities/Icon";
 import styles from "./NavigationBar.module.css";
 import logo from "./NavBar__icon.png";
-
-const NavElements = ["icon-bookmark", "icon-chat", "icon-home"];
+import { Icons } from "../../assets/SVG/Icons";
 
 const NavigationBar = () => {
   return (
@@ -17,7 +15,7 @@ const NavigationBar = () => {
               to="bookmark"
               className={({ isActive }) => (isActive ? `${styles.active}` : "")}
             >
-              <Icon name={NavElements[0]} />
+              <Icons name="chat" width="2rem" height="2rem" />
               Bookmarks
             </NavLink>
           </li>
@@ -26,12 +24,12 @@ const NavigationBar = () => {
               to="help"
               className={({ isActive }) => (isActive ? `${styles.active}` : "")}
             >
-              <Icon name={NavElements[1]} />
+              <Icons name="help" width="2rem" height="2rem" />
               Help
             </NavLink>
           </li>
           <li>
-            <Icon name={NavElements[2]} />
+            <Icons name="user" width="2rem" height="2rem" />
             Login or singup
           </li>
         </ul>

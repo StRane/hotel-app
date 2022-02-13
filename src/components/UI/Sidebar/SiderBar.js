@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import styles from "./SideBar.module.css";
-import Icon from "../../utilities/Icon";
+import { Icons } from "../../assets/SVG/Icons";
 
 const SideBar = () => {
   return (
@@ -10,25 +10,25 @@ const SideBar = () => {
         <ul className={styles.ul}>
           <li>
             <Link to="hotel" className={styles.link}>
-              <Icon name="hotel" />
+              <Icons name="home" width="2rem" height="2rem" />
               <span>Hotel</span>
             </Link>
           </li>
           <li>
             <Link to="flight" className={styles.link}>
-              <Icon name="hotel" />
+              <Icons name="aircraft" width="2rem" height="2rem" />
               Flight
             </Link>
           </li>
           <li>
             <Link to="cars" className={styles.link}>
-              <Icon name="hotel" />
+              <Icons name="key" width="2rem" height="2rem" />
               Cars
             </Link>
           </li>
           <li>
             <Link to="tours" className={styles.link}>
-              <Icon name="hotel" />
+              <Icons name="map" width="2rem" height="2rem" />
               Tours
             </Link>
           </li>
