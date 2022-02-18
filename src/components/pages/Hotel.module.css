@@ -1,0 +1,5 @@
+.hotel {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-grey-dark-2);
+}

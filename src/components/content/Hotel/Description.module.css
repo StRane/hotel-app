@@ -1,0 +1,52 @@
+.description {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  flex: 0 0 54%;
+  margin-right: 4rem;
+}
+
+.p {
+  margin-bottom: 2rem;
+}
+
+.description ul {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem;
+  border-top: var(--line);
+  border-bottom: var(--line);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description li {
+  flex: 0 0 50%;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+  display: flex;
+  align-items: center;
+}
+
+.recommend p {
+  margin-right: auto;
+}
+
+.recommend img {
+  box-sizing: content-box;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-right: -2rem;
+}
+
+.last {
+  margin-right: 0;
+}
