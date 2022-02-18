@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import styles from "./SideBar.module.css";
 import { Icons } from "../../assets/SVG/Icons";
@@ -9,28 +9,45 @@ const SideBar = () => {
       <nav>
         <ul className={styles.ul}>
           <li>
-            <Link to="hotel" className={styles.link}>
-              <Icons name="home" width="2rem" height="2rem" />
-              <span>Hotel</span>
-            </Link>
+            <NavLink
+              to="hotel"
+              className={({ isActive }) => (isActive ? `${styles.active}` : "")}
+            >
+              <Icons name="home" width="2rem" height="2rem" fill="#faf9f9" />
+              <span className={styles.span}>Hotel</span>
+            </NavLink>
           </li>
           <li>
-            <Link to="flight" className={styles.link}>
-              <Icons name="aircraft" width="2rem" height="2rem" />
-              Flight
-            </Link>
+            <NavLink
+              to="flight"
+              className={({ isActive }) => (isActive ? `${styles.active}` : "")}
+            >
+              <Icons
+                name="aircraft"
+                width="2rem"
+                height="2rem"
+                fill="#faf9f9"
+              />
+              <span className={styles.span}>Flight</span>
+            </NavLink>
           </li>
           <li>
-            <Link to="cars" className={styles.link}>
-              <Icons name="key" width="2rem" height="2rem" />
-              Cars
-            </Link>
+            <NavLink
+              to="cars"
+              className={({ isActive }) => (isActive ? `${styles.active}` : "")}
+            >
+              <Icons name="key" width="2rem" height="2rem" fill="#faf9f9" />
+              <span className={styles.span}>Cars</span>
+            </NavLink>
           </li>
           <li>
-            <Link to="tours" className={styles.link}>
-              <Icons name="map" width="2rem" height="2rem" />
-              Tours
-            </Link>
+            <NavLink
+              to="tours"
+              className={({ isActive }) => (isActive ? `${styles.active}` : "")}
+            >
+              <Icons name="map" width="2rem" height="2rem" fill="#faf9f9" />
+              <span className={styles.span}>Tours</span>
+            </NavLink>
           </li>
         </ul>
       </nav>

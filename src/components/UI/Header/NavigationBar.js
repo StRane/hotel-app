@@ -15,8 +15,8 @@ const NavigationBar = () => {
               to="bookmark"
               className={({ isActive }) => (isActive ? `${styles.active}` : "")}
             >
-              <Icons name="chat" width="2rem" height="2rem" />
-              Bookmarks
+              <Icons name="chat" width="3rem" height="3rem" />
+              {/* Bookmarks */}
             </NavLink>
           </li>
           <li>
@@ -24,13 +24,13 @@ const NavigationBar = () => {
               to="help"
               className={({ isActive }) => (isActive ? `${styles.active}` : "")}
             >
-              <Icons name="help" width="2rem" height="2rem" />
-              Help
+              <Icons name="help" width="3rem" height="3rem" />
+              {/* Help */}
             </NavLink>
           </li>
           <li>
-            <Icons name="user" width="2rem" height="2rem" />
-            Login or singup
+            <Icons name="user" width="3rem" height="3rem" />
+            {/* Login or singup */}
           </li>
         </ul>
       </nav>
